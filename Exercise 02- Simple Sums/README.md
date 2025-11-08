@@ -7,3 +7,9 @@ In this exercise, you will create and work with integer variables, perform arith
 2. Declare a second variable and initialize it with the integer value `10`.
 3. Declare a third variable that stores the sum of first two numbers.
 4. Print the value of the sum to the console.
+num1 = 8
+num2 = 10
+sum = num1 + num2
+print("the sum is :", sum)
+the output is :
+the sum is 18 
