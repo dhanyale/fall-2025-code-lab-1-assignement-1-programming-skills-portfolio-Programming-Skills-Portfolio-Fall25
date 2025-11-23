@@ -6,7 +6,21 @@ In this exercise, you'll create a program that stores and prints your name, home
 1. Store the information (name, hometown, and age) as key-value pairs in a dictionary.  
 2. Print the values on separate lines using a single `print()` statement.
 3. Use variables with appropriate data types for each piece of information.
-Name = input("Enter your full name:")
+def personal_info():
+     name = input("Enter your full name: ")
+     hometown = input("Enter your hometown: ")
+   try:
+     age = int(input("Enter your age: "))
+   except ValueError:
+        print("Invalid input for age. Please enter a number.")
+   info = {"Name": name,"Hometown": hometown, "Age": age}
+      print(f"Name: {info['Name']},Hometown: {info['Hometown']},Age: {info['Age']}")
+   if __name__ == "__main__":
+        personal_info()
+
+
+    
+
  
 
 
