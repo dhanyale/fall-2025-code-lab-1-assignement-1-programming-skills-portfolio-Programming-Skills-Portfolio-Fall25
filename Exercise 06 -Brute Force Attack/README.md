@@ -10,3 +10,9 @@ Write a program that simulates a password entry system. The correct password is 
 ### Optional Requirements:
 
 Modify the program to include a maximum of 5 password attempts. If the user enters the wrong password, inform them of the remaining attempts. If the maximum number of attempts is reached, inform the user that the authorities have been alerted.
+def password_system():
+    correct_password = "12345"
+    entered_password = "12345"
+    entered_password = input("Enter the password: ")
+          print("Access granted! Correct password entered.")
+
