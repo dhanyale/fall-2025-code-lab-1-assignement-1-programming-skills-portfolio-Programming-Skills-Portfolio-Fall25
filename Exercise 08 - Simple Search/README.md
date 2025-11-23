@@ -5,3 +5,11 @@ Write a program that searches for a specific string within a list of strings. Th
 ### Optional Requirements:
 1. Allow the user to input the search term instead of using a predefined value.
 2. Implement the search functionality based on user input.
+def simple_search():
+ names=["Jake" "Zac", "Ian", "Ron", "Sam", "Dave"]
+ search_term = "Sam"
+    if search_term in names:
+        print(f"'{search_term}' found in the list!")
+    else:
+        print(f"'{search_term}' not found in the list.")
+ 
