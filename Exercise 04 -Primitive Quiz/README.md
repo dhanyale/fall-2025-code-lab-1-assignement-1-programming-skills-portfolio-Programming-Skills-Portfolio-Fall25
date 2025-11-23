@@ -10,3 +10,15 @@ In this exercise, you'll create a simple program that asks the user a question, 
 ### Advanced Requirements:
 Ignore Capitalization: Modify your program to accept answers regardless of the capitalization (e.g., "paris", "Paris", and "PaRis" should all be considered correct).
 Multiple Questions: Extend the program into a quiz that asks for the capitals of 10 European countries. Provide feedback for each question.
+def quiz():
+questions = {"France": "Paris","Germany": "Berlin","Italy": "Rome","Spain": "Madrid","Portugal": "Lisbon", "Netherlands": "Amsterdam","Belgium": "Brussels","Switzerland": "Bern", "Austria": "Vienna","Poland": "Warsaw"}
+       print("Welcome to the European Capitals Quiz!")
+ for country, capital in questions.items():
+        answer = input(f"What is the capital of {country}?)
+  if answer.lower() == capital.lower():
+            print("Correct!")
+        else:
+            print(f" Wrong. The capital of {country} is {capital}.")
+  if __name__ == "__main__":
+        quiz()
+
